@@ -1,4 +1,4 @@
-# code2img
+# Code2mg
 
 Code2Img is a tree-based code clone detector, which satisfies scalability while detecting complicated clones effectively.
 Given the source code, we first perform clone filtering by the inverted index to locate the suspected clones.
