@@ -27,9 +27,9 @@ Data Preprocessing, Clone Filtering, Image Transforming, and Clone Detecting.
 Java -jar ./target/code2img-0.1-SNAPSHOT.jar <N> <Filter Score> <Verify Score> <Final Verify Score> <Thread Num> <Input Path> <Output Path> <Txl Path>
 ```
 - ``N`` : The parameter ``N`` for the first-stage clone detection.
-- ``Filter Score`` : If two samples' first-stage clone detection similarity is lower than ``Filter Socre``, they will be classified to no-clone pairs.
-- ``Verify Score`` : If two samples' first-stage clone detection similarity is greater than ``Verify Socre``, they will be classified to clone pairs.
-- ``Final Verify Socre`` : If two samples' second-stage clone detection similarity is greater than ``Final Verify Score``, they will be calssified to clone pairs.
+- ``Filter Score`` : If two samples' first-stage clone detection similarity is lower than ``Filter Score``, they will be classified to no-clone pairs.
+- ``Verify Score`` : If two samples' first-stage clone detection similarity is greater than ``Verify Score``, they will be classified to clone pairs.
+- ``Final Verify Score`` : If two samples' second-stage clone detection similarity is greater than ``Final Verify Score``, they will be calssified to clone pairs.
 - ``Thread Num`` : The numbers of threads used for clone detection. 
 - ``Input Path`` : The path to the directory includes all Java source files
 - ``Output Path`` : The Path contains the output files.
