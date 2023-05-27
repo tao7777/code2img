@@ -13,14 +13,13 @@ Data Preprocessing, Clone Filtering, Image Transforming, and Clone Detecting.
 
 1. Data Preprocessing: This phase aims to normalize the type-specific tokens of the AST and generate the inverted index by N-line hash for each code block of the normalized code.
 2. Clone Filtering: This phase is targeted to search for clone candidates in the inverted index and calculate the N-lines similarity to obtain the suspected clones.
-3. Image Transforming: For the suspected clones, this phase first transforms the AST into an adjacency image by the adjacency matrix of AST's node types.
-    Then encode the adjacency image with the Markov model to obtain the state probability image and remove its useless pixels to get the final vector.
+3. Image Transforming: For the suspected clones, this phase first transforms the AST into an adjacency image by the adjacency matrix of AST's node types. Then encode the adjacency image with the Markov model to obtain the state probability image and remove its useless pixels to get the final vector.
 4. Clone Detecting: This phase aims to detect clones within the suspected clones by calculating the Jaccard similarity between their final vectors.
 
 ## Requirements
 * Java 11
-* Gradle 7.5.1
-* Txl
+* Gradle 8.0
+* Txl 10.8b
 * Javaparser 3.24.4
 
 ## Usage
@@ -40,5 +39,3 @@ Java -jar ./target/code2img-0.1-SNAPSHOT.jar <N> <Filter Score> <Verify Score> <
 ```bash
 Java -jar ./target/code2img-0.1-SNAPSHOT.jar 4 0.1 0.7 0.85 8 ./data/input ./output ./txl/java-extract-functions.txl
 ```
-## Publication
-Todo: 论文的相关信息
